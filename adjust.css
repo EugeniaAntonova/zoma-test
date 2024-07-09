@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #212129;
+    color: #212129;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    transition: .3s ease-in-out;
+}
+
+.button {
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    border-radius: 8px;
+    outline-offset: 2px;
+}
+
+
+.title,
+.text {
+    margin: 0;
+}

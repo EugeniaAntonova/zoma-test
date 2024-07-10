@@ -146,7 +146,7 @@ header menu>li::before {
 }
 
 .header menu>li .link.button[aria-expanded]::after {
-    transition: transform .3e ease-in-out;
+    transition: transform .3s ease-in-out;
     transform: rotate(90deg);
     background-image: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1.67 10.375 4.42-4.42-4.42-4.42' stroke='%23212129' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
 }
@@ -286,24 +286,24 @@ header menu>li::before {
         transition-timing-function: ease-in-out;
     }
 
-    header menu>li .link.button[aria-expanded]::after {
+    .header menu>li .link.button[aria-expanded]::after {
         content: "";
         width: 15px;
         height: 15px;
         background-repeat: no-repeat;
         background-size: 8px 12px;
         background-position: 50% 50%;
-        transition: transform .3e ease-in-out;
+        transition: transform .3s ease-in-out;
         transform: rotate(90deg);
         background-image: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1.67 10.375 4.42-4.42-4.42-4.42' stroke='%23E1BF14' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
     }
 
-    header menu>li .link.button[aria-expanded="true"] {
+    .header menu>li .link.button[aria-expanded="true"] {
         background-color: #E1BF14;
         color: #212129;
     }
 
-    header menu>li .link.button[aria-expanded="true"]::after {
+    .header menu>li .link.button[aria-expanded="true"]::after {
         transform: rotate(-90deg);
         background-image: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1.67 10.375 4.42-4.42-4.42-4.42' stroke='%23212129' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
     }
@@ -340,7 +340,7 @@ header menu>li::before {
         background-color: #F2F6F9;
     }
 
-    header menu>li .link.button[aria-expanded="true"] + ol{
+    .header menu>li .link.button[aria-expanded="true"] + ol{
         padding-block: 150px 80px;
         translate: 0 0;
     }
@@ -351,6 +351,20 @@ header menu>li::before {
 
     .mob-only {
         display: none;
+    }
+
+    .header.dark {
+        color: #212129;
+    }
+
+    .header.dark .button--primary {
+        background-color: #212129;
+        color: #fff;
+    }
+
+    .header.dark .logo-path {
+        transition: fill .3s ease-in-out;
+        fill: #212129;
     }
 
 }
